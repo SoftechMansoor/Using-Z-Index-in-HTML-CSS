@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Z index</title>
+<style type="text/css">
+	.wrapper {
+		position: relative;
+	}
+.dashed-box {
+
+	position: relative;
+	z-index: 1;
+	border:dashed;
+	height: 8em;
+	margin-bottom: 1em;
+	margin-top: 2em;
+}
+
+.green-box {
+
+	position: absolute;
+	z-index: 2;
+	background-color: lightgreen;
+	left: 65%;
+	top: -25%;
+	height: 7em;
+	opacity: 0.9;
+	width: 20%;
+}
+
+.gold-box {
+
+	position: absolute;
+	z-index: 3;
+	background-color: gold;
+	width: 80%;
+	left: 60px;
+	top: 3em;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+
+<div class="wrapper">
+	<div class="dashed-box">Dashed Box</div>
+	<div class="gold-box">Gold Box</div>
+	<div class="green-box">Green Box</div>
+
+</div>
+
+
+</body>
+</html>
